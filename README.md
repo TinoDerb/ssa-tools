@@ -8,8 +8,11 @@ Singular Spectrum Analysis (SSA) is a powerful method for time-series decomposit
 This package provides an accelerated SSA function, allowing SSA to be applied to large datasets within a reasonable time.
 
 🔹 Why Use This Package?
+
 ✔ Fast & efficient implementation
+
 ✔ Works with large time-series data, even with sensor signals with sampling up to 2 MHz!
+
 ✔ Supports both classic and accelerated SSA
 
 Installation
@@ -62,5 +65,7 @@ This package is licensed under the MIT License.
 In future versions, I plan to extend the capabilities to include:
 
 ✅ Variance explained by each component
+
 ✅ Weighted Correlation Analysis between the reconstructed components and the original data
+
 ✅ Automatic parameter selection for SSA optimization
