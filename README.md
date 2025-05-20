@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # SSA-Tools
 
 **A comprehensive Python package for accelerated Singular Spectrum Analysis**
