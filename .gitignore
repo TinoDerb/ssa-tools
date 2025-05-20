@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -89,26 +88,3 @@ dmypy.json
 .vscode/
 *.swp
 *.swo
-=======
-# Ignore Python compiled files
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-
-# Ignore virtual environments
-venv/
-env/
-
-# Ignore build artifacts
-build/
-dist/
-*.egg-info
-
-# Ignore Jupyter Notebook checkpoints
-.ipynb_checkpoints/
-
-# Ignore system files
-.DS_Store
-Thumbs.db
->>>>>>> cdc42936f83c2f0aba3cc6f07367ab6063b26bb0
