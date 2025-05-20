@@ -339,4 +339,3 @@ In future versions, I plan to extend the capabilities to include:
 ✅ Weighted Correlation Analysis between the reconstructed components and the original data
 
 ✅ Automatic parameter selection for SSA optimization
->>>>>>> cdc42936f83c2f0aba3cc6f07367ab6063b26bb0
