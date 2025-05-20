@@ -1,0 +1,5 @@
+numpy
+joblib
+numba
+tqdm
+pytest

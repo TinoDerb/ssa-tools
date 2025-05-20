@@ -1,5 +1,6 @@
 from setuptools import setup, find_packages
 
+<<<<<<< HEAD
 # Read in the README for the long description
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
@@ -38,4 +39,28 @@ setup(
         "numba>=0.53.0",
     ],
     keywords="singular spectrum analysis, signal processing, time series, decomposition, trend extraction, noise reduction",
+=======
+setup(
+    name="ssa_tools",
+    version="0.1.0",
+    author="Mehieddine Derbas",
+    author_email="mehyeddin.derbass@gmail.com",
+    description="A Python library for Singular Spectrum Analysis (SSA)",
+    long_description=open("README.md").read(),
+    long_description_content_type="text/markdown",
+    url="https://github.com/TinoDerb/ssa_tools",  # Replace with your GitHub URL
+    packages=find_packages(),
+    install_requires=[
+        "numpy",
+        "joblib",
+        "numba",
+        "tqdm"
+    ],
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+    ],
+    python_requires=">=3.7",
+>>>>>>> cdc42936f83c2f0aba3cc6f07367ab6063b26bb0
 )

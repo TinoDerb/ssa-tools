@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 """
 SSA-Tools: A comprehensive Python package for accelerated Singular Spectrum Analysis
 =================================================================================
@@ -27,3 +28,8 @@ from .accelerated import accelerated_ssa
 from .core import SSA
 
 __all__ = ['classic_ssa', 'accelerated_ssa', 'SSA']
+=======
+from .accelerated import accelerated_ssa
+from .classic import classic_ssa
+from .core import SSA
+>>>>>>> cdc42936f83c2f0aba3cc6f07367ab6063b26bb0

@@ -2,6 +2,7 @@ import numpy as np
 import pytest
 from ssa_tools.core import SSA
 
+<<<<<<< HEAD
 # Sample signal: Sine + Cosine + Noise
 np.random.seed(42)
 signal = np.sin(np.linspace(0, 2 * np.pi, 100)) + np.cos(np.linspace(0, 10 * np.pi, 100))+ 0.1 * np.random.randn(100)
@@ -91,3 +92,24 @@ def all_equivalent():
     assert np.allclose(myEVD_SSA.eigenvalues, mySVD_SSA.eigenvalues), "Eigenvalues mismatch"
     assert np.allclose(np.abs(myEVD_SSA.eigenvectors), np.abs(mySVD_SSA.eigenvectors)), "Eigenvectors mismatch"
     
+=======
+def test_ssa_output_classic():
+    signal = np.sin(np.linspace(0, 10, 100))
+    components = SSA(signal, lag=20, numComp=5, method="classic")
+    assert components.shape == (100, 5)
+
+def test_invalid_lag_classic():
+    signal = np.sin(np.linspace(0, 10, 100))
+    with pytest.raises(AssertionError):
+        SSA(signal, lag=1, numComp=5, method="classic")
+
+def test_ssa_output_accelerated():
+    signal = np.sin(np.linspace(0, 10, 100))
+    components = SSA(signal, lag=20, numComp=5, method="accelerated")
+    assert components.shape == (100, 5)
+
+def test_invalid_lag_accelerated():
+    signal = np.sin(np.linspace(0, 10, 100))
+    with pytest.raises(AssertionError):
+        SSA(signal, lag=1, numComp=5, method="accelerated")
+>>>>>>> cdc42936f83c2f0aba3cc6f07367ab6063b26bb0
