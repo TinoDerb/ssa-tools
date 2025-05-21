@@ -5,6 +5,8 @@
 [![PyPI version](https://img.shields.io/pypi/v/ssa-tools.svg)](https://pypi.org/project/ssa-tools/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+[![Example of SSA](https://github.com/TinoDerb/ssa-tools/blob/main/resources/ReconstructedComponents.png)
+
 SSA-Tools provides both classic and accelerated implementations of Singular Spectrum Analysis (SSA), a powerful technique for time series decomposition, trend extraction, and noise reduction. The package includes complete visualization tools, weighted correlation analysis, and automated component grouping capabilities.
 
 ## Features
@@ -115,6 +117,8 @@ After performing SSA decomposition with `computeSSA()`, you can access:
 
 ### Weighted Correlation
 
+[![WCA](https://github.com/TinoDerb/ssa-tools/blob/main/resources/WeightedCorrelations.png)
+
 Compute and analyze correlations between components:
 
 ```python
@@ -127,6 +131,26 @@ wcorr_matrix = ssa.WCorr
 # Find related components
 correlated_pairs = ssa.detectCorrelatedComponents()
 ```
+
+## Variance explained
+
+Analyse the importance of each component, this can be a helpful tool to know how many components are needed for a specific task
+
+[![Variance Explained](https://github.com/TinoDerb/ssa-tools/blob/main/resources/VarianceExplained.png)
+
+```python
+# Compute weighted correlations
+ssa.computeSSA()
+
+# Plot variance explained by components
+ssa.plotVarianceExplained()
+
+```
+## Eigenforms are always nice to look at 😁
+
+The decomposition of the data reveals patterns that can be visualized by scattering the eigenvectors against each other.
+
+[![Eigenforms](https://github.com/TinoDerb/ssa-tools/blob/main/resources/Eigenforms.png)
 
 ### Choosing Window Length
 
@@ -156,6 +180,8 @@ Choose the right implementation for your needs:
 
 ### Signal Filtering
 
+[![Filtering example](https://github.com/TinoDerb/ssa-tools/blob/main/resources/SSA_for_filtering.png)
+
 ```python
 import numpy as np
 from ssa_tools import SSA
@@ -177,7 +203,11 @@ mse = np.mean((filtered - clean)**2)
 print(f"Mean Squared Error: {mse:.6f}")
 ```
 
+
+
 ### Trend Extraction
+
+[![Example of trend detection and smoothing](https://github.com/TinoDerb/ssa-tools/blob/main/resources/SmoothingData.png)
 
 ```python
 import numpy as np
@@ -250,7 +280,7 @@ If you use this package in a publication, please cite:
 @article{SSA2024,
   title={Accelerated Singular Spectrum Analysis and Machine Learning to investigate wood machining acoustics},
   journal={Mechanical Systems and Signal Processing},
-  year={2024},
+  year={2025},
   doi={10.1016/j.ymssp.2024.111879}
 }
 ```
