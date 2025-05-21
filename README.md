@@ -117,7 +117,7 @@ After performing SSA decomposition with `computeSSA()`, you can access:
 
 ### Weighted Correlation
 
-[![WCA](https://github.com/TinoDerb/ssa-tools/blob/main/resources/WeightedCorrelations.png)
+[![WCA](https://github.com/TinoDerb/ssa-tools/blob/main/resources/WeightedCorrelations.png)]
 
 Compute and analyze correlations between components:
 
@@ -136,7 +136,7 @@ correlated_pairs = ssa.detectCorrelatedComponents()
 
 Analyse the importance of each component, this can be a helpful tool to know how many components are needed for a specific task
 
-[![Variance Explained](https://github.com/TinoDerb/ssa-tools/blob/main/resources/VarianceExplained.png)
+[![Variance Explained](https://github.com/TinoDerb/ssa-tools/blob/main/resources/VarianceExplained.png)]
 
 ```python
 # Compute weighted correlations
@@ -150,7 +150,7 @@ ssa.plotVarianceExplained()
 
 The decomposition of the data reveals patterns that can be visualized by scattering the eigenvectors against each other.
 
-[![Eigenforms](https://github.com/TinoDerb/ssa-tools/blob/main/resources/Eigenforms.png)
+[![Eigenforms](https://github.com/TinoDerb/ssa-tools/blob/main/resources/Eigenforms.png)]
 
 ### Choosing Window Length
 
@@ -180,7 +180,11 @@ Choose the right implementation for your needs:
 
 ### Signal Filtering
 
-[![Filtering example](https://github.com/TinoDerb/ssa-tools/blob/main/resources/SSA_for_filtering.png)
+SSA was rarely applied to signal processing due to the associated computational complexity.
+
+Here, one can use the accelerated algorithm for faster results!
+
+[![Filtering example](https://github.com/TinoDerb/ssa-tools/blob/main/resources/SSA_for_filtering.png)]
 
 ```python
 import numpy as np
@@ -207,7 +211,9 @@ print(f"Mean Squared Error: {mse:.6f}")
 
 ### Trend Extraction
 
-[![Example of trend detection and smoothing](https://github.com/TinoDerb/ssa-tools/blob/main/resources/SmoothingData.png)
+SSA can be used to extract primary trends in the data. Additionally, this trend extraction can be used for smoothing noisy data
+
+[![Example of trend detection and smoothing](https://github.com/TinoDerb/ssa-tools/blob/main/resources/SmoothingData.png)]
 
 ```python
 import numpy as np
