@@ -176,6 +176,14 @@ Choose the right implementation for your needs:
   - Uses multi-threading and JIT compilation
   - Optimized for numerical efficiency
 
+The accelerated method can be taken as *O(n)* instead of *O(n³)*
+
+![Duration](https://github.com/TinoDerb/ssa-tools/blob/main/resources/ClassicVsAccelerated.png)
+
+The accelerated method can be applied on data that is up to 1000x larger!
+
+![Data size](https://github.com/TinoDerb/ssa-tools/blob/main/resources/TableComputation.png)
+
 ## Advanced Examples
 
 ### Signal Filtering
