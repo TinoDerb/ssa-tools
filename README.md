@@ -291,11 +291,18 @@ If you use this package in a publication, please cite:
 **DOI**: https://doi.org/10.1016/j.ymssp.2024.111879
 
 ```bibtex
-@article{SSA2024,
-  title={Accelerated Singular Spectrum Analysis and Machine Learning to investigate wood machining acoustics},
-  journal={Mechanical Systems and Signal Processing},
-  year={2025},
-  doi={10.1016/j.ymssp.2024.111879}
+@article{DERBAS2025111879,
+title = {Accelerated Singular Spectrum Analysis and Machine Learning to investigate wood machining acoustics},
+journal = {Mechanical Systems and Signal Processing},
+volume = {223},
+pages = {111879},
+year = {2025},
+issn = {0888-3270},
+doi = {https://doi.org/10.1016/j.ymssp.2024.111879},
+url = {https://www.sciencedirect.com/science/article/pii/S0888327024007775},
+author = {Mehieddine Derbas and Stephan Frömel-Frybort and Hans-Christian Möhring and Martin Riegler},
+keywords = {Acoustics, Process monitoring, Wood machining, Singular Spectrum Analysis, Predictive modelling},
+abstract = {The use of monitoring in manufacturing has increased the necessity for effective signal pre-processing methods to remove redundant data. Singular Spectrum Analysis (SSA) can decompose signals and time-series data into summable and physically interpretable reconstructed components. The high computational complexity has impeded the popularity of this method, as it could only be used for small datasets. In this study, significant work was put into the acceleration of SSA to enable the decomposition of acoustic emissions and airborne sound signals collected by monitoring wood machining. Important computational improvements were highlighted by benchmarking the accelerated SSA against the classical approach. Further results showed that the combination of SSA and Machine Learning enhanced the accuracy of predicting surface roughness (RSSA2=0.96 | RRAW2=0.89) and sample density (RSSA2=0.93 | RRAW2=0.88), while also improving the classification of cutting speeds (ACCSSA=100% | ACCRAW=86.34%) and wood species (ACCSSA=93.12% | ACCRAW=89.39%). The interpretation of the results showed that SSA enabled the selective filtering of redundant information from the monitored acoustics.}
 }
 ```
 
@@ -306,6 +313,13 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
+
+Still to do are different things:
+
+  - Adding docstrings to some functions
+  - Adding numCor arg to accelereted_ssa()
+  - Adding defaults to all parameters
+  - More plotting variations
 
 ## Acknowledgments
 
